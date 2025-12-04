@@ -1,0 +1,78 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 15px 0px;
+}
+
+/* Logo */
+.logo {
+    font-size:22px;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* Enlaces del menú */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de enlaces */
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background 0.3s;
+}
+
+.nav-links a: hover {
+    background-color: #333333;
+    border-radius: 5px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+body {
+    padding-top: 70; /* Para que el contenido no quede oculto */
+}
+/* Menú hamburguesa (oculto en pc)---*/
+.menu-btn {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+/* Responsive */
+@media (max-width: 768px){
+
+    /* Mostrar el botón hamburguesa */
+    .menu-btn{
+        display: block;
+    }
+
+    /* El menú se oculta inicialmente */
+}
